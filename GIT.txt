@@ -92,3 +92,22 @@ git reset HEAD <ファイル名/ディレクトリ名>
 git commit --amend
 →　直前のCommitをやり直す。現在のステージの情報で上書き
 　 ただしRemoteにPushしたものはやっちゃだめ！
+
+
+／／Remoteから情報を取得する
+git fetch <RemoteName/origin>
+→　ローカルリポジトリのみ変更
+
+git merge origin/master
+→　ローカルリポジトリをワークツリーに落とす
+
+git pull <RemoteName/origin> <BranchName>
+→ fetchとmergeを同時に行う
+
+
+/* ブランチとマージ */
+// ブランチの作成
+git branch <BranchName> // 作成のみ、切り替えは行わない
+
+// ブランチの切り替え
+git checkout <BranchName>
