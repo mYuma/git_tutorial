@@ -34,3 +34,10 @@ git add .
 
 // ステータスの確認
 git status
+
+
+// 変更差分の確認
+git diff
+git diff <FileName>
+
+git diff --staged // addしたあとのファイルを見る場合
