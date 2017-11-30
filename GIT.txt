@@ -41,3 +41,20 @@ git diff
 git diff <FileName>
 
 git diff --staged // addしたあとのファイルを見る場合
+
+
+// 変更履歴の確認
+git log
+
+--oneline // １行で表示
+-p <FileName>　// ファイルを指定して表示
+-n <CommitCnt> // コミット数を指定して表示
+
+
+// ファイルの削除
+git rm <ファイル名>
+git rm -r <ディレクトリ名>
+→　ローカルのファイルも削除
+
+git rm --cached <ファイル名>
+→　ローカルには残す、gitから削除
