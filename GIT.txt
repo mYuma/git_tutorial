@@ -78,3 +78,17 @@ git remote set-url <Remote> <NewURL>
 
 /* 管理しないファイルをgitの管理から外す */
 .gitignoreに指定する
+
+
+// 変更を取り消す
+git checkout -- .
+git checkout -- <ファイル名/ディレクトリ名>
+→　ワークツリーのファイルを変更、ステージの状態に戻す
+
+git reset HEAD .
+git reset HEAD <ファイル名/ディレクトリ名>
+→　ステージのファイルを変更、最新のコミットの状態に戻す
+
+git commit --amend
+→　直前のCommitをやり直す。現在のステージの情報で上書き
+　 ただしRemoteにPushしたものはやっちゃだめ！
