@@ -58,3 +58,23 @@ git rm -r <ディレクトリ名>
 
 git rm --cached <ファイル名>
 →　ローカルには残す、gitから削除
+
+
+// ファイルの移動
+git mv <OldFileName> <NewFileName> // Stageまで反映される
+
+
+// リモートリポジトリにPushする
+git push <RemoteName/origin> <BranchName>
+
+/* リモートリポジトリを新規追加する */
+git remote add <RemoteName/origin> <URL>
+
+/* リモートリポジトリのURLを確認する */
+git remote -v
+
+/* リモートリポジトリのURLを変更する */
+git remote set-url <Remote> <NewURL>
+
+/* 管理しないファイルをgitの管理から外す */
+.gitignoreに指定する
